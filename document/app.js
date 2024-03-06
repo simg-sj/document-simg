@@ -34,6 +34,7 @@ Router_start.prototype.configureExpress = function()
 
     // app.use(express.static(path.join(__dirname, './client'))); // service
     app.use('/v1/hana/agreements', express.static('./client/v1/hana/agreements')); // 윗 라인 정의 폴더 밑에 있음.
+    app.use('/v1/meritz/agreements', express.static('./client/v1/meritz/agreements')); // 윗 라인 정의 폴더 밑에 있음.
     var router = express.Router();
 
 
